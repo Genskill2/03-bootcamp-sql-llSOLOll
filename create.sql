@@ -18,6 +18,6 @@ create table subjects(
 create table books_subjects(
   book integer,
   subject integer,
-  foreign key(books) references books(id),
-  foreign key(subjects.id) references subjects(id)
+  foreign key(book) references books(id),
+  foreign key(subjects) references subjects(id)
  );
